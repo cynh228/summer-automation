@@ -19,6 +19,8 @@ while True:
         print("获取画面失败")
         break
 
+    cv2.rectangle(frame, (5, 5), (260, 35), (0, 0, 0), -1)
+    cv2.putText(frame, "Press SPACE to capture", (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1, cv2.LINE_AA)
     # 3. 显示当前画面（窗口名叫做 "Camera"）
     cv2.imshow("Camera", frame)
 
