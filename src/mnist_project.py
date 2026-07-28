@@ -49,8 +49,8 @@ print(model)  # 打印模型结构
 # --- 3. 定义损失函数和优化器 ---
 # 损失函数: 用于分类任务的交叉熵损失
 loss_fn = nn.CrossEntropyLoss()
-# 优化器: 随机梯度下降 (SGD)，学习率 lr=0.001
-optimizer = torch.optim.SGD(model.parameters(), lr=0.001)
+# 优化器: Adam，学习率 lr=0.001
+optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # --- 4. 训练和测试函数 ---
 def train_loop(dataloader, model, loss_fn, optimizer):
