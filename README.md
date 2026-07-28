@@ -23,3 +23,6 @@
 ### 如何运行
 ```bash
 python src/mnist_project.py
+
+## 子项目
+- [MNIST 手写数字识别](./mnist/README.md) - PyTorch 全连接网络，准确率 98.0%
